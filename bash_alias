@@ -1,7 +1,6 @@
-## my_kali
 alias ls='ls --color=always -lath'
 alias apt='sudo apt'
-function apt-updater [
+function apt-updater {
 	apt-get update &&
 	apt-get dist-upgrade -Vy &&
 	apt-get autoremove -y &&
