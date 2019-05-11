@@ -1,0 +1,11 @@
+tilix
+screen
+gvfs
+gvfs-common
+gvfs-daemons
+gvfs-libs
+gconf-service
+gconf2
+gconf2-common
+gvfs-bin
+psmisc
