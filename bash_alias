@@ -3,10 +3,14 @@ alias halt='sudo halt'
 alias reboot='sudo reboot'
 alias ls='ls --color=always -lath'
 function apt-updater {
+	echo "Updating.." &&
 	sudo apt-get update &&
-	apt-get dist-upgrade -Vy &&
-	apt-get autoremove -y &&
-	apt-get autoclean &&
-	apt-get clean &&
-	reboot
+	echo "Upgrading.." &&
+	sudo apt-get dist-upgrade -Vy &&
+	echo "Removing extras.." &&
+	sudo apt-get autoremove -y &&
+	echo "Cleaning up.." &&
+	sudo apt-get autoclean &&
+	sudo apt-get clean &&
+	sudo reboot
 	}
